@@ -28,7 +28,7 @@ public class AuthController {
 
     @RequestMapping("/hello")
     public String hello(){
-        return  "Nil here";
+        return  "Hi!";
     }
 
     @PostMapping("/authenticate")
