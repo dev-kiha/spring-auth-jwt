@@ -26,12 +26,12 @@ public class AuthController {
     @Autowired
     JwtUtil jwtUtil;
 
-    @RequestMapping("/hello")
+    @RequestMapping("/api/hello")
     public String hello(){
         return  "Hi!";
     }
 
-    @PostMapping("/authenticate")
+    @PostMapping("/api/authenticate")
     public ResponseEntity<?> authenticate(@RequestBody AuthenticationRequest authenticationRequest) {
         Authentication authenticate = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(authenticationRequest.getUsername(), authenticationRequest.getPassword())
