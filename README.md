@@ -1,16 +1,16 @@
-# spring-auth-jwt
+# spring-auth-jwt-swagger
 
-{domain}/authenticate
+/api/authenticate
 
 	Body > raw,JSON
-  ~~~
+~~~
 		{
 		"username" : "{username}",
 		"password" : "{password}"
 		}
  ~~~
  
-{domain}/hello
+/api/hello
 ~~~
 	-Headers
 		-Content-Type
@@ -19,3 +19,5 @@
 		-Authorization
 			-Bearer {token}
 ~~~
+
+/swagger-ui.html
