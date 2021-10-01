@@ -1,4 +1,21 @@
 # spring-auth-jwt
 
-# OpenAPI Specification (Swagger UI)
->https://spring-auth-jwt.herokuapp.com/swagger-ui.html
+{domain}/authenticate
+
+	Body > raw,JSON
+  ~~~
+		{
+		"username" : "{username}",
+		"password" : "{password}"
+		}
+ ~~~
+ 
+{domain}/hello
+~~~
+	-Headers
+		-Content-Type
+			-application/json
+      
+		-Authorization
+			-Bearer {token}
+~~~
