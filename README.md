@@ -1,21 +1,7 @@
-# spring-auth-jwt
+# spring-auth-jwt-swagger
+- Spring Boot 2.4
+- Swagger2
+- Heroku
 
-{domain}/authenticate
-
-	Body > raw,JSON
-  ~~~
-		{
-		"username" : "{username}",
-		"password" : "{password}"
-		}
- ~~~
- 
-{domain}/hello
-~~~
-	-Headers
-		-Content-Type
-			-application/json
-      
-		-Authorization
-			-Bearer {token}
-~~~
+# OpenAPI Specification Sample
+>https://spring-auth-jwt.herokuapp.com/swagger-ui.html
